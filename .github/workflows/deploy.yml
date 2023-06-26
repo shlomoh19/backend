@@ -24,8 +24,8 @@ jobs:
     - name: ‘Deploy to Server’
       uses: appleboy/ssh-action@master
       with:
-        host: “44.216.122.164”
-        username: “ubuntu”
+        host: "44.216.122.164"
+        username: "ubuntu"
         key: ${{ secrets.SSH_PRIVATE_KEY1 }}
         script: |
           cd /home/ubuntu/backend
